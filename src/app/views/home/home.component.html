@@ -1,3 +1,9 @@
 <div class="container-fluid">
-  
+    <app-custom-dropdown 
+        [labels]='dropdown_labels' 
+        [dropdownDefaultName]='default_label'
+        (clickedOption)='optionClicked($event)'>
+    </app-custom-dropdown>
+    <app-counter></app-counter>
+    <button (click)="changeLanguage()">pl / en</button>
 </div>

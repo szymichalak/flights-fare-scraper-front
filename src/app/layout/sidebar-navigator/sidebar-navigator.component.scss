@@ -1,19 +1,40 @@
-.container-fluid {
+.container {
     background-color: yellow;
     margin-top: 150px;
     height: 1500px;
     z-index: 0;
+    padding: 10px;
 }
 
 #items-list {
     position: fixed;
     top: 200px;
+    padding: 0px;
 }
 
 ul {
     list-style-type: none;
 }
 
-.item-label {
+.item {
     cursor: pointer;
+    display: flex;
+    margin-bottom: 15px;
+
+    i {
+        height: 30px;
+        width: 30px;
+
+        ::before {
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    p {
+        height: 30px;
+        line-height: 30px;
+        margin-bottom: 0px;
+        margin-left: 15px;
+    }
 }

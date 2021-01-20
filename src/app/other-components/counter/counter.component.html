@@ -1,0 +1,9 @@
+<div class="content">
+  <i class="fa fa-minus-circle fa-2x" (click)="changeValue('-1')"></i>
+  <mat-form-field class="example-full-width" [style.width.px]=inputWidth>
+    <mat-label>{{mainLabel}}</mat-label>
+    <input matInput id="input-field" type="number" min="{{min}}" max="{{max}}" placeholder="{{placeholder}}" [(ngModel)]="value">
+  </mat-form-field>
+  <i class="fa fa-plus-circle fa-2x" (click)="changeValue('1')"></i>
+</div>
+

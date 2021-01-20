@@ -1,15 +1,16 @@
-<div class="container-fluid">
+<div class="container">
     <ul id="items-list">
         <li>
-            <div class="item-label" (click)="goto('/home')">
-                Home
+            <div class="item" (click)="goto('/home')">
+                <i class="fa fa-home fa-2x"></i>
+                <p class="d-none d-md-block">Home</p>
             </div>
         </li>
         <li>
-            <div class="item-label" (click)="goto('/settings')">
-                Settings
+            <div class="item" (click)="goto('/settings')">
+                <i class="fa fa-cog fa-2x"></i>
+                <p class="d-none d-md-block">Settings</p>
             </div>
         </li>
     </ul>
-  
 </div>
