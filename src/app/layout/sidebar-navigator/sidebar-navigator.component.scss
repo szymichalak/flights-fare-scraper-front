@@ -1,0 +1,19 @@
+.container-fluid {
+    background-color: yellow;
+    margin-top: 150px;
+    height: 1500px;
+    z-index: 0;
+}
+
+#items-list {
+    position: fixed;
+    top: 200px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.item-label {
+    cursor: pointer;
+}

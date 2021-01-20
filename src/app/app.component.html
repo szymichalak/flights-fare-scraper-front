@@ -2,21 +2,20 @@
   <app-header></app-header>
 </div>
 
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-2">
+<div class="container-fluid" id="main-content-row">
+  <div class="row row-eq-height">
+    <div class="col-md-2 trans" id="sidebar-column">
       <div id="sidebar">
         <app-sidebar-navigator></app-sidebar-navigator>
       </div>
     </div>
-    <div class="col-md-10">
-      <router-outlet></router-outlet>
+    <div class="col-md trans" id="main-content-column">
+      <div id="main-content">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>
-
-
-
 
 <div id="footer">
   <app-footer></app-footer>
