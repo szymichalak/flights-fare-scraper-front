@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "wizz-scraper-front": {
+    "flights-fare-scraper-front": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/wizz-scraper-front",
+            "outputPath": "dist/flights-fare-scraper-front",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -73,18 +73,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "wizz-scraper-front:build"
+            "browserTarget": "flights-fare-scraper-front:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "wizz-scraper-front:build:production"
+              "browserTarget": "flights-fare-scraper-front:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "wizz-scraper-front:build"
+            "browserTarget": "flights-fare-scraper-front:build"
           }
         },
         "test": {
@@ -121,16 +121,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "wizz-scraper-front:serve"
+            "devServerTarget": "flights-fare-scraper-front:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "wizz-scraper-front:serve:production"
+              "devServerTarget": "flights-fare-scraper-front:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "wizz-scraper-front"
+  "defaultProject": "flights-fare-scraper-front"
 }

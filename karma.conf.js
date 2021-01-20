@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/wizz-scraper-front'),
+      dir: require('path').join(__dirname, './coverage/flights-fare-scraper-front'),
       subdir: '.',
       reporters: [
         { type: 'html' },
